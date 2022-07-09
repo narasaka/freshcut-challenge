@@ -40,7 +40,7 @@ const Video: React.FC<VideoProps> = ({
     <>
       {hasWindow && (
         <div
-          className={`group flex flex-col md:rounded-xl lg:flex-row bg-neutral-900 overflow-hidden ${className}`}
+          className={`group flex flex-col md:rounded-xl xl:flex-row bg-neutral-900 overflow-hidden ${className}`}
         >
           <div className="relative">
             <div className="absolute z-10 invisible group-hover:visible top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
