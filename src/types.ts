@@ -1,5 +1,3 @@
-import { IconType } from "react-icons";
-
 export interface User {
   username: string;
   profilePictureUrl: string;

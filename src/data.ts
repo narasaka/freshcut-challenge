@@ -1,4 +1,4 @@
-import { Comment, Social } from "./types";
+import { Comment } from "./types";
 
 export const commentData: Comment[] = [
   {
