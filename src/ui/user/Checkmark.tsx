@@ -5,7 +5,7 @@ interface CheckmarkProps extends ComponentPropsWithoutRef<"svg"> {}
 const Checkmark: React.FC<CheckmarkProps> = ({ className }) => {
   return (
     <svg
-      className={`fill-yellow-500 w-8 h-8 ${className}`}
+      className={`fill-yellow-500 ${className}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 98.4 100"
     >

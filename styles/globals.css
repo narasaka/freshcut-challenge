@@ -4,4 +4,13 @@
 
 body {
   background-color: black;
+  color: white;
+}
+
+.scrollbar {
+  scrollbar-width: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
 }

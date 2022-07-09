@@ -1,17 +1,10 @@
 import Link from "next/link";
 import { ComponentPropsWithoutRef } from "react";
+import { Social } from "../../types";
 import { BsInstagram, BsTwitch, BsTwitter, BsYoutube } from "react-icons/bs";
 
-interface UserSocialsProps extends ComponentPropsWithoutRef<"div"> {}
-
-interface Social {
-  id: string;
-  url: string;
-  icon: JSX.Element;
-}
-
 //mock data
-const data: Social[] = [
+export const data: Social[] = [
   {
     id: "twitch",
     url: "https://www.twitch.tv/aceu",
@@ -33,6 +26,8 @@ const data: Social[] = [
     icon: <BsTwitter color="white" size={20} />,
   },
 ];
+
+interface UserSocialsProps extends ComponentPropsWithoutRef<"div"> {}
 
 const UserSocials: React.FC<UserSocialsProps> = ({ className }) => {
   return (
