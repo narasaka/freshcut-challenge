@@ -50,11 +50,11 @@ const VideoCommentList: React.FC<VideoCommentListProps> = ({
   };
 
   return (
-    <div className="bg-neutral-900 p-4 flex flex-col gap-4">
+    <div className="bg-neutral-900 p-4 flex flex-col flex-grow gap-4 relative h-full">
       <div>
         <span className="font-semibold">Comments</span> {comments.length}
       </div>
-      <div className="flex flex-col gap-4 max-h-40 overflow-y-scroll scrollbar">
+      <div className="flex flex-col gap-4 max-h-40 lg:max-h-80 overflow-y-scroll scrollbar">
         {comments.map((comment: Comment) => (
           <VideoComment
             key={comment.id}
@@ -66,7 +66,7 @@ const VideoCommentList: React.FC<VideoCommentListProps> = ({
           />
         ))}
       </div>
-      <form className="flex items-center gap-4" onSubmit={handleSubmit}>
+      <form className="flex items-center gap-4 mt-auto" onSubmit={handleSubmit}>
         <input
           type="text"
           name="comment"

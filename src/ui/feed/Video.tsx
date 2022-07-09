@@ -8,7 +8,7 @@ import {
 import ReactPlayer from "react-player/lazy";
 import { User } from "../../types";
 import VideoCaption from "./VideoCaption";
-import VideoComments from "./VideoCommentList";
+import VideoCommentList from "./VideoCommentList";
 
 interface VideoProps extends ComponentPropsWithRef<"div"> {
   user: User;
@@ -86,9 +86,9 @@ const Video: React.FC<VideoProps> = ({
               loop
             />
           </div>
-          <div className="lg:w-[58rem]">
+          <div className="lg:w-[58rem] flex flex-col">
             <VideoCaption user={user} title={title} />
-            <VideoComments likes={likes} shares={shares} isLiked={isLiked} />
+            <VideoCommentList likes={likes} shares={shares} isLiked={isLiked} />
           </div>
         </div>
       )}
